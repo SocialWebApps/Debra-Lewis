@@ -1,0 +1,1 @@
+This folder contains Debra Lewis's midterm project for COT 6930: Web 2.0
