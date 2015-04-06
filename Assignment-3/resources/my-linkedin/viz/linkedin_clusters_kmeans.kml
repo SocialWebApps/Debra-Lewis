@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <Style id="centroid">
+      <IconStyle>
+        <color>ff0000ff</color>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <Point>
+        <coordinates>-73.7552108765,42.651550293</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="contacts">
+          <value>cbaechle fau.</value>
+        </Data>
+        <Data name="coords">
+          <value>-73.7552108765,42.651550293</value>
+        </Data>
+        <Data name="label">
+          <value>Albany, New York Area</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <Point>
+        <coordinates>-80.1362762451,26.089969635</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="contacts">
+          <value>Santiago Aguerrevere.</value>
+        </Data>
+        <Data name="coords">
+          <value>-80.1362762451,26.089969635</value>
+        </Data>
+        <Data name="label">
+          <value>Miami/Fort Lauderdale Area</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <Point>
+        <coordinates>-87.9068374634,43.041809082</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="contacts">
+          <value>Kevin Medina.</value>
+        </Data>
+        <Data name="coords">
+          <value>-87.9068374634,43.041809082</value>
+        </Data>
+        <Data name="label">
+          <value>Greater Milwaukee Area</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <Point>
+        <coordinates>-80.0531921387,26.714389801</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="contacts">
+          <value>Ravi Shankar.
+Steven Clanton.
+Mofidul Jamal.
+Bredler Mortimer.
+Melissa Serrano.</value>
+        </Data>
+        <Data name="coords">
+          <value>-80.0531921387,26.714389801</value>
+        </Data>
+        <Data name="label">
+          <value>West Palm Beach, Florida Area</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>
