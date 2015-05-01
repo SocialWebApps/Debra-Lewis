@@ -1,0 +1,4 @@
+Final assignment:
+
+I chose option 2, gathering data from education statistics and display visualizations by state.  I put the final product on a webpage, <a href="resources/presentingData.html">here</a>; the user selects which data to display, and the website shows a pie chart with national averages and the national state-by-state map showing deviations from the national average.
+The state-by-state maps are set up so that a state is colored white if it is within range of the average (determined by 1 standard deviation); it is blue if the state's average is below that of the national average; and it is red if the state's average is above that of the national average.  A darker color means that the state's average is farther away from the national average (as determined by standard deviations).

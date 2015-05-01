@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Graduate students' ethnicity and gender: 2013</title>
+
+<script language="javascript" type="text/javascript">
+function displayImage()
+{
+	var e = document.getElementById('selectForm');
+	var dataCategory = e.options[e.selectedIndex].value;
+	var strSource = "StateBy" + dataCategory + ".png";
+	document.getElementById('dataImage').src = strSource;
+	
+	if (dataCategory=="EFTOTLM" || dataCategory=="EFTOTLW")
+		document.getElementById('nationalData').src = "NationalByGender.png";
+	else if ( dataCategory == "EFAIANT" || dataCategory=="EFASIAT" || dataCategory == "EFBKAAT" || dataCategory == "EFHISPT" || dataCategory == "EFNHPIT" || dataCategory == "EFWHITT" || dataCategory == "EF2MORT" ||  dataCategory == "EFNRALT")
+		document.getElementById('nationalData').src = "NationalByEthnicity.png";
+	else
+		document.getElementById('nationalData').src = "NationalByGenderAndEthnicity.png";
+	
+}
+</script>
+
+<style type="text/css">
+body { width=800px; text-align:center;}
+.center { text-align:center; }
+img { margin:1em; }
+</style>
+</head>
+
+<body>
+<h2>Graduate students&rsquo; ethnicity and gender: 2013</h2>
+
+<form id="dataForm" method="post" action="">
+<label>Select the data set to display:</label><br/>
+<select id="selectForm" onChange="displayImage()" onLoad="displayImage()">
+<option value="EFTOTLM" selected>All men</option>
+<option value="EFTOTLW">All women</option>
+<option value="EFAIANT">American Indian/Native Alaskan</option>
+<option value="EFAIANM">American Indian/Native Alaskan men</option>
+<option value="EFAIANW">American Indian/Native American women</option>
+<option value="EFASIAT">Asian</option>
+<option value="EFASIAM">Asian men</option>
+<option value="EFASIAW">Asian women</option>
+<option value="EFBKAAT">Black/African-American</option>
+<option value="EFBKAAM">Black/African-American men</option>
+<option value="EFBKAAW">Black/African-American women</option>
+<option value="EFHISPT">Hispanic</option>
+<option value="EFHISPM">Hispanic men</option>
+<option value="EFHISPW">Hispanic women</option>
+<option value="EFNHPIT">Native Hawaiian/Pacific Islander</option>
+<option value="EFNHPIM">Native Hawaiian/Pacific Islander men</option>
+<option value="EFNHPIW">Native Hawaiian/Pacific Islander women</option>
+<option value="EFWHITT">White</option>
+<option value="EFWHITM">White men</option>
+<option value="EFWHITW">White women</option>
+<option value="EF2MORT">Multiracial</option>
+<option value="EF2MORM">Multiracial men</option>
+<option value="EF2MORW">Multiracial women</option>
+<option value="EFNRALT">Nonresident alien</option>
+<option value="EFNRALM">Nonresident alien men</option>
+<option value="EFNRALW">Nonresident alien women</option>
+</select>
+</form>
+
+<!--display image here-->
+<img id="dataImage" src="StateByEFTOTLM.png" width=90%><br/>
+<img id="nationalData" src="NationalByGender.png" width=90%>
+
+<p class="center">Data is from the National Center for Education Statistics&rsquo; 2013 data, available online <a href="http://nces.ed.gov/ipeds/datacenter/Default.aspx">here</a></p>
+</body>
+
+</html>
